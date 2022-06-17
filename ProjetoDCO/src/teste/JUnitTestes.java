@@ -1,4 +1,4 @@
-package testes;
+package teste;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +10,7 @@ import identidades.Item;
 import main.Main;
 import sistema.MigrantMatcher;
 
-class TestesJUnit {
+class JUnitTestes {
 
 	@Test
 	void VoluntarioAddingTest() {
