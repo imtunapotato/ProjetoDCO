@@ -29,7 +29,7 @@ class JUnitTestes {
 		itemHandler.indicaItem(desc);
 		AjudaHandler ajudaHandler = itemHandler;
 		Main.verificarCodigo("912345678", ajudaHandler, mm);
-		assertEquals(true, ajudaHandler.getAjuda().getId());
+		assertEquals(true, mm.containsAjuda(ajudaHandler.getAjuda().getId()));
 	}
 
 }

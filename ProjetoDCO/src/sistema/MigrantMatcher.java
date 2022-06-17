@@ -34,7 +34,7 @@ public class MigrantMatcher {
 		return this.catVoluntarios.exists(num);
 	}
 
-	public Boolean containsAjuda(int id) {
+	public Boolean containsAjuda(String id) {
 		return this.catAjudas.exists(id);
 	}
 
