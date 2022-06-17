@@ -37,4 +37,27 @@ public class MigrantMatcher {
 	public Boolean containsAjuda(int id) {
 		return this.catAjudas.exists(id);
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

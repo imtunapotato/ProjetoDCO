@@ -1,4 +1,4 @@
-package Migrantes;
+package identidades;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,12 @@ public class Familia {
 	
 	public String toString() {
 		StringBuilder s = new StringBuilder("");
-		s.append("Número de membros : " + numeroMigrantes + "\n" );
-		s.append("Lista de membros: \n");
-		for ( Migrante membros : listaMigrantes) {
-			s.append(membros.toString());
+		if ( numeroMigrantes != 0 ) {
+			s.append("Número de membros : " + numeroMigrantes + "\n" );
+			s.append("Lista de membros: \n");
+			for ( Migrante membros : listaMigrantes) {
+				s.append(membros.toString());
+			}
 		}
 		return s.toString();
 	}

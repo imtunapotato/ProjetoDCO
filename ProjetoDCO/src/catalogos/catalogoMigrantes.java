@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import Handlers.FamiliaHandler;
-import Migrantes.Familia;
-import Migrantes.Migrante;
+import identidades.Familia;
+import identidades.Migrante;
 
 public class catalogoMigrantes {
 	

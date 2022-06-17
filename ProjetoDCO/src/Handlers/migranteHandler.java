@@ -5,9 +5,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Scanner;
 
-import Migrantes.Familia;
-import Migrantes.Migrante;
 import catalogos.catalogoMigrantes;
+import identidades.Familia;
+import identidades.Migrante;
 
 public class migranteHandler {
 
@@ -54,7 +54,6 @@ public class migranteHandler {
         int numero = sc.nextInt();
 
         adicionarCatalogoMigrante(nome, numero);
-        sc.close();
 	}
 
 	
@@ -81,7 +80,6 @@ public class migranteHandler {
 		}
 		
 		adcionarCatalogoFamilia(new Migrante(nome, numero), familia);
-		sc.close();
 		
 	}
 	

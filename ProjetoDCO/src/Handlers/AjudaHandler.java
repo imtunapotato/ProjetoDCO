@@ -21,7 +21,6 @@ public abstract class AjudaHandler {
 			System.out.println("Introduziu algo inesperado!");
 			return null;
 		}
-
 	}
 
 	public Ajuda getAjuda() {

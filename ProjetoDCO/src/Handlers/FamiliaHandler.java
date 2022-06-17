@@ -2,7 +2,7 @@ package Handlers;
 
 import java.util.List;
 
-import Migrantes.Familia;
+import identidades.Familia;
 
 public class FamiliaHandler {
 	

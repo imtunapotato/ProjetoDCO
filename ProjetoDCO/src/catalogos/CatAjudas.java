@@ -1,6 +1,7 @@
 package catalogos;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import identidades.Ajuda;
@@ -18,6 +19,10 @@ public class CatAjudas {
 
 	public Boolean exists(int id) {
 		return null;
+	}
+	
+	public Iterator<Ajuda> iterator(){
+		return catAjudas.iterator();
 	}
 
 }

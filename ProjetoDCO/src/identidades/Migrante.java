@@ -1,4 +1,4 @@
-package Migrantes;
+package identidades;
 
 public class Migrante {
 

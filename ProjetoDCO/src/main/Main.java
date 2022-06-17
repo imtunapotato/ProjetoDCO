@@ -1,6 +1,7 @@
 package main;
 
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,6 +11,7 @@ import Handlers.AjudaHandler;
 import Handlers.AlojamentoHandler;
 import Handlers.IdentificarHandler;
 import Handlers.ItemHandler;
+import Handlers.migranteHandler;
 import identidades.Alojamento;
 import identidades.Item;
 import identidades.Regiao;
@@ -17,6 +19,7 @@ import sistema.MigrantMatcher;
 
 public class Main {
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 		MigrantMatcher mm = new MigrantMatcher();
 		IdentificarHandler identificarHandler = mm.getIdentificarHandler();
@@ -64,4 +67,23 @@ public class Main {
 		}
 
 	}
+	
+	public static void questionLoop(Scanner sc, migranteHandler MigranteHandler) {
+
+        int awnser = 0;
+
+        System.out.println("Selecione o que pretende");
+        System.out.println("1 - Sozinho");
+        System.out.println("2 - Acompanhado");
+        System.out.print("Opção: ");
+        try {
+        	awnser = sc.nextInt();
+        } catch (InputMismatchException e) {
+        	System.out.println("Error");
+        } 
+        
+        if ( awnser == 1 ) { MigranteHandler.pedirMigrante(); } 
+           else { MigranteHandler.pedirFamilia(); }
+    }
+
 }
