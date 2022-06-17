@@ -8,6 +8,7 @@ public class AlojamentoHandler extends AjudaHandler {
 
 	public void numRes(int num) {
 		Alojamento toAdd = new Alojamento();
+		toAdd.setRandomId();
 		toAdd.setNumPessoas(num);
 		this.alojamento = toAdd;
 	}

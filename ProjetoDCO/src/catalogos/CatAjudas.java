@@ -16,8 +16,13 @@ public class CatAjudas {
 		catAjudas.add(a);
 	}
 
-	public Boolean exists(int id) {
-		return null;
+	public Boolean exists(String id) {
+		for (Ajuda a : catAjudas) {
+			if (id.equals(a.getId())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
