@@ -1,5 +1,7 @@
 package identidades;
 
+import java.util.Objects;
+
 public class Migrante {
 
 	private String name;
@@ -18,7 +20,38 @@ public class Migrante {
 		if ( numero == 0 ) {
 			return ( name + "\n");
 		} else {
-			return ("Nome: " + name + "\n" + "Número: " + numero + "\n");
+			return ("Nome: " + name + "\n" + "Nï¿½mero: " + numero + "\n");
 		}
 	}
+	
+	@Override
+	public boolean equals( Object o ) {
+		if ( this == o )
+			return true;
+		
+		if ( o == null || !(o instanceof Migrante) )
+			return false;
+		
+		Migrante migrante = (Migrante) o;
+		
+		return Objects.equals( name , migrante.name ) &&
+				Objects.equals( numero , migrante.numero );
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

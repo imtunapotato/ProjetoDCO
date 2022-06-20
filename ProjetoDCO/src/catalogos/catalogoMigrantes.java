@@ -1,11 +1,7 @@
 package catalogos;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Map.Entry;
-
-import Handlers.FamiliaHandler;
 import identidades.Familia;
 import identidades.Migrante;
 
@@ -14,13 +10,13 @@ public class catalogoMigrantes {
 	private LinkedHashMap< Migrante , Familia > listaMigrantes;
 	
 	public catalogoMigrantes() {
-		/* Lista de migrantes com o migrante "cabeça" como chave*/
+		/* Lista de migrantes com o migrante "cabeï¿½a" como chave*/
 		this.listaMigrantes = new LinkedHashMap< Migrante, Familia>(); 
 	}
 	
 	public void addMigrante(String nome, int numero) {
 		Migrante migrante = new Migrante(nome, numero);
-		Familia familia = new Familia(0);		
+		Familia familia = new Familia(0, migrante);		
 		listaMigrantes.put(migrante, familia);
 	}
 	
